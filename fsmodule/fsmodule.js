@@ -19,3 +19,11 @@ fs.readFile('text.txt',(error,data)=>{
         console.log(data)  //it prints a binary data
     }
 })
+// creating a file
+fs.writeFile('new.txt','this is a new file created by node js',(error)=>{
+    if (error) {
+        console.log('error'+error)
+        
+    }
+    console.log('file created')
+})
