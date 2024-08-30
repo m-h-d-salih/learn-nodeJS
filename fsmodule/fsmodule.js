@@ -27,3 +27,11 @@ fs.writeFile('new.txt','this is a new file created by node js',(error)=>{
     }
     console.log('file created')
 })
+//append file
+
+fs.appendFile('new.txt',' hello iam  node js',(error)=>{
+    if (error) {
+        console.log('error')
+    }
+    console.log('file appended')
+})
