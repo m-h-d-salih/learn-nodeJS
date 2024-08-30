@@ -35,3 +35,7 @@ fs.appendFile('new.txt',' hello iam  node js',(error)=>{
     }
     console.log('file appended')
 })
+//rename
+fs.rename('text.txt','sample.txt',(error)=>{
+    error?console.log(error):console.log('renamed successfully')
+})
