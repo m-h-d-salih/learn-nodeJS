@@ -39,3 +39,8 @@ fs.appendFile('new.txt',' hello iam  node js',(error)=>{
 fs.rename('text.txt','sample.txt',(error)=>{
     error?console.log(error):console.log('renamed successfully')
 })
+//delete
+fs.unlink('new.txt',(error)=>{
+    error?console.log(error):console.log('deleted successfully')
+
+})
