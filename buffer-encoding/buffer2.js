@@ -26,10 +26,20 @@ writablestream.on('finish',()=>{
 //     console.log("created")
 // })
 
+
+//creating 10 files
+// for (let index = 1; index < 11; index++) {
+//    fs.writeFile(`new${index}.txt`,`this is new${index} file`,(err)=>{
+//     if(err)throw err
+//     console.log(`new${index} file created`)
+//    })
+    
+// }
+//reading 10 file
 for (let index = 1; index < 11; index++) {
-   fs.writeFile(`new${index}.txt`,`this is new${index} file`,(err)=>{
+   fs.readFile(`new${index}.txt`,(err,data)=>{
     if(err)throw err
-    console.log(`new${index} file created`)
+    console.log(`new${index} = ${data}`)
    })
     
 }
