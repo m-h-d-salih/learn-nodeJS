@@ -43,9 +43,17 @@ writablestream.on('finish',()=>{
 //    })
     
 // }
-for (let index = 1; index < 6; index++) {
+// for (let index = 1; index < 6; index++) {
   
-  fs.writeFile(`txt${index}.txt`,`thuis is txt${index}`,(err)=>{
-    console.log(`created txt${index}`)
+//   fs.writeFile(`txt${index}.txt`,`thuis is txt${index}`,(err)=>{
+//     console.log(`created txt${index}`)
+//   })
+// }
+
+for (let index = 1; index < 6; index++) {
+  fs.readFile(`txt${index}.txt`,(err,data)=>{
+    if(err) throw err;
+    console.log(`txt${index} = ${data}`)
   })
+  
 }
