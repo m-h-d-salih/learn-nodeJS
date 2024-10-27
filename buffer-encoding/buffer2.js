@@ -36,10 +36,16 @@ writablestream.on('finish',()=>{
     
 // }
 //reading 10 file
-for (let index = 1; index < 11; index++) {
-   fs.readFile(`new${index}.txt`,(err,data)=>{
-    if(err)throw err
-    console.log(`new${index} = ${data}`)
-   })
+// for (let index = 1; index < 11; index++) {
+//    fs.readFile(`new${index}.txt`,(err,data)=>{
+//     if(err)throw err
+//     console.log(`new${index} = ${data}`)
+//    })
     
+// }
+for (let index = 1; index < 6; index++) {
+  
+  fs.writeFile(`txt${index}.txt`,`thuis is txt${index}`,(err)=>{
+    console.log(`created txt${index}`)
+  })
 }
