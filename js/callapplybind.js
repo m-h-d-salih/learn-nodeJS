@@ -9,3 +9,7 @@ greet.call(person,"hello");
 //apply
 
 greet.apply(person,['hii'])
+
+//bind
+const binded=greet.bind(person,'hoi')
+binded()
