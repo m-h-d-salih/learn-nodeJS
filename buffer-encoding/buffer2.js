@@ -58,7 +58,9 @@ writablestream.on('finish',()=>{
   
 // }
 
-fs.unlink('txt1.txt',(err)=>{
+for (let index = 1; index < 11; index++) {
+fs.unlink(`new${index}.txt`,(err)=>{
   if(err) throw err
-  console.log(`deleted`)
-})
+})  
+console.log(`new${index} is deleted successfully`)
+}
