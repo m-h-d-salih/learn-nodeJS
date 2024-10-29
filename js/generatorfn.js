@@ -4,4 +4,4 @@ function* generator(){
 }
 const callgen=generator()
 console.log(callgen.next())
-console.log(callgen.next())
+console.log(callgen.next()) 
